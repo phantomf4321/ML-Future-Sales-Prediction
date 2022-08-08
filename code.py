@@ -34,3 +34,15 @@ Newspaper    0
 Sales        0
 dtype: int64
 """
+
+figure = px.scatter(data_frame = data, x="Sales",
+                    y="TV", size="TV", trendline="ols")
+figure.show()
+
+figure = px.scatter(data_frame = data, x="Sales",
+                    y="Newspaper", size="Newspaper", trendline="ols")
+figure.show()
+
+figure = px.scatter(data_frame = data, x="Sales",
+                    y="Radio", size="Radio", trendline="ols")
+figure.show()
